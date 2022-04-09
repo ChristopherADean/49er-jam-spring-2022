@@ -18,6 +18,6 @@ MonoBehaviour:
   duration: 10
   damage: 1
   attackCooldown: 0.1
-  knockbackUp: 3
-  knockbackBack: 5
+  knockbackUp: 1
+  knockbackBack: 2
   speedMult: 1.8
