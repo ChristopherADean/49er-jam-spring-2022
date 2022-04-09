@@ -273,7 +273,6 @@ public class PMovement : MonoBehaviour
 
         if (CheckGround() && queueJump != true)
         {
-            Debug.Log("Jump queued");
             queueJump = true;
         }
     }
