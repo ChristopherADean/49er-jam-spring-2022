@@ -228,6 +228,8 @@ GameObject:
   - component: {fileID: 1575508661985262270}
   - component: {fileID: 1575508661985262209}
   - component: {fileID: 1575508661985262271}
+  - component: {fileID: 2104913506}
+  - component: {fileID: 2104913507}
   m_Layer: 6
   m_Name: Player
   m_TagString: Untagged
@@ -250,6 +252,7 @@ Transform:
   - {fileID: 1575508661609517319}
   - {fileID: 1575508660609744149}
   - {fileID: 7630517990733558636}
+  - {fileID: 190137179126918907}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -299,7 +302,7 @@ MonoBehaviour:
   friction: 8
   crouchingFriction: 4
   standingFriction: 8
-  jumpForce: 50
+  jumpForce: 10
   sprintingEnabled: 0
   crouchCurve:
     serializedVersion: 2
@@ -356,6 +359,111 @@ MonoBehaviour:
   m_DefaultActionMap: PrimaryControls
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
+--- !u!114 &2104913506
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1575508661985262211}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68c544db617009045b9abe0b0bca9abf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attackDuration: 0.5
+  cancelTime: 0.3
+  attackRange: 0.5
+  hitBoxActiveTime: 0.2
+  hitBoxDeActivateTime: 0.6
+  attackCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: -2.4250095
+      outSlope: -2.4250095
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.041900802
+      value: -0.10160984
+      inSlope: 0.03926047
+      outSlope: 0.03926047
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.4585291
+    - serializedVersion: 3
+      time: 0.16693036
+      value: 0.99739325
+      inSlope: -0.023301449
+      outSlope: -0.023301449
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.11712298
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: -1.1972507
+      outSlope: -1.1972507
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  cart: {fileID: 5282265032630100407}
+--- !u!114 &2104913507
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1575508661985262211}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8de1e1d437f8d646a5782b1226e6426, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  powerupInventoryObject: {fileID: 7626881182212433388, guid: 024e07753bb6b284baa3b8b37b783ca0, type: 3}
+  inventoryTrans: {fileID: 190137179126918907}
+--- !u!1 &4751360384618235657
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 190137179126918907}
+  m_Layer: 6
+  m_Name: PowerupInventory
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &190137179126918907
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4751360384618235657}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1575508661985262208}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &5282265032630100407
 GameObject:
   m_ObjectHideFlags: 0
@@ -368,6 +476,7 @@ GameObject:
   - component: {fileID: 797949981956850763}
   - component: {fileID: 2767624102311180551}
   - component: {fileID: 4469240822408922702}
+  - component: {fileID: 911451275}
   m_Layer: 6
   m_Name: Cart
   m_TagString: Untagged
@@ -383,8 +492,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5282265032630100407}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.352, z: 1.462}
-  m_LocalScale: {x: 1, y: 1, z: 1.4}
+  m_LocalPosition: {x: 0, y: -0.352, z: 1.28}
+  m_LocalScale: {x: 1.2, y: 1.2, z: 1.6}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1575508661985262208}
@@ -448,8 +557,25 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5282265032630100407}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &911451275
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5282265032630100407}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ae94df337bca624c9164029c21e6dff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  collideAbilityCooldown: 0.1
+  damage: 1
+  upwardsVelocity: 6
+  forwardsVelocity: 10
+  dEvent: {fileID: 11400000, guid: 9a13b6c56e4672841a2b89a1e593a7c7, type: 2}

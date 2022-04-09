@@ -18,5 +18,6 @@ public class SpriteBillboardScript : MonoBehaviour
         Vector3 lookPos = mainCam.position;
         lookPos.y = transform.position.y;
         transform.LookAt(lookPos, Vector3.up);
+        transform.Rotate(0, 180, 0);
     }
 }
