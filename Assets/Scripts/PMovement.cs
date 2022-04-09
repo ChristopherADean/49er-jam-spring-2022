@@ -9,8 +9,10 @@ public class PMovement : MonoBehaviour
     private Vector2 m_Look;
     private GameObject cam;
     private Rigidbody rb;
-    private LayerMask groundLayers;
     private GameObject playerCollider;
+
+    //Misc vars
+    [SerializeField] private LayerMask groundLayers;
 
     //MouseLook Variables
     public float mSens = 1.0f;
@@ -63,8 +65,6 @@ public class PMovement : MonoBehaviour
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
 
-        groundLayers = 1 << 3;
-        groundLayers = ~groundLayers;
     }
 
     // Update is called once per frame
@@ -134,6 +134,7 @@ public class PMovement : MonoBehaviour
 
     private Vector3 CalcVelocity(Vector3 input)
     {
+        
         //Set acceleration value based on if in air or not
         float curAccel = moveSpeed;
         bool grounded = CheckGround();
@@ -212,8 +213,9 @@ public class PMovement : MonoBehaviour
     {
 
         RaycastHit hit;
-        if(Physics.SphereCast(transform.position, 0.45f, -transform.up, out hit, 0.7f, groundLayers))
+        if(Physics.SphereCast(transform.position, 0.45f, -transform.up, out hit, 1f, groundLayers))
         {
+            
             return true;
         }
         return false;
@@ -230,15 +232,15 @@ public class PMovement : MonoBehaviour
         return false;
     }
 
-    public void MovementInput(string[] args)
+    public void OnMovement(InputValue i)
     {
-        Vector2 input = new Vector2(float.Parse(args[0]), float.Parse(args[1]));
+        Vector2 input = i.Get<Vector2>();
         moveInputVector = input;
     }
 
-    public void LookInput(string[] args)
+    public void OnMouseLook(InputValue i)
     {
-        Vector2 input = new Vector2(float.Parse(args[0]), float.Parse(args[1]));
+        Vector2 input = i.Get<Vector2>();
         m_Look = input;
     }
 
@@ -266,8 +268,9 @@ public class PMovement : MonoBehaviour
         
     }
 
-    public void JumpInput()
+    public void OnJump()
     {
+
         if (CheckGround() && queueJump != true)
         {
             queueJump = true;
