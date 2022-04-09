@@ -213,8 +213,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 609839576}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -1, z: 0}
-  m_LocalScale: {x: 100, y: 1, z: 100}
+  m_LocalPosition: {x: 0, y: -3.06, z: 0}
+  m_LocalScale: {x: 100, y: 5, z: 100}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -232,7 +232,7 @@ GameObject:
   - component: {fileID: 795421134}
   - component: {fileID: 795421133}
   - component: {fileID: 795421132}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: PlayerCollider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -330,7 +330,7 @@ GameObject:
   - component: {fileID: 1687258584}
   - component: {fileID: 1687258582}
   - component: {fileID: 1687258586}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Main Camera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
@@ -447,7 +447,8 @@ GameObject:
   - component: {fileID: 2104913502}
   - component: {fileID: 2104913504}
   - component: {fileID: 2104913503}
-  m_Layer: 0
+  - component: {fileID: 2104913505}
+  m_Layer: 6
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -483,22 +484,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 221c695f9402a4c42b8d41c4cecf01d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mSens: 1
+  groundLayers:
+    serializedVersion: 2
+    m_Bits: 55
+  mSens: 0.125
   camTiltVel: 1
-  moveSpeed: 200
-  airMoveSpeed: 200
+  moveSpeed: 9
+  airMoveSpeed: 2
   crouchSpeed: 4
   crouchBoost: 10
   crouchBoostCooldown: 2
   sprintSpeed: 8
-  maxMoveSpeed: 5
+  maxMoveSpeed: 10
   maxAirSpeed: 0.6
   maxCrouchSpeed: 7
   maxSprintSpeed: 16
   friction: 8
   crouchingFriction: 4
   standingFriction: 8
-  jumpForce: 5
+  jumpForce: 50
   sprintingEnabled: 0
   crouchCurve:
     serializedVersion: 2
@@ -539,8 +543,38 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 112
   m_CollisionDetection: 0
+--- !u!114 &2104913505
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2104913501}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Actions: {fileID: -944628639613478452, guid: 547a6a8ac8338c744a9a8b412840f94b, type: 3}
+  m_NotificationBehavior: 0
+  m_UIInputModule: {fileID: 0}
+  m_DeviceLostEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_DeviceRegainedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ControlsChangedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ActionEvents: []
+  m_NeverAutoSwitchControlSchemes: 0
+  m_DefaultControlScheme: 
+  m_DefaultActionMap: PrimaryControls
+  m_SplitScreenIndex: -1
+  m_Camera: {fileID: 0}
 --- !u!108 &2138677392 stripped
 Light:
   m_CorrespondingSourceObject: {fileID: 1416686641855184674, guid: 7731f867b651d4f469421b4a4f073e82, type: 3}
