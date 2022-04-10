@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9934be3a600900a42af6faa78c5eea5c, type: 3}
   m_Name: JimBlenderItem
   m_EditorClassIdentifier: 
-  pName: JimBlenderItem
+  pName: JimBlender
   icon: {fileID: 21300000, guid: 70951d5f324daf4489819bb089a55eb3, type: 3}
   iType: 3

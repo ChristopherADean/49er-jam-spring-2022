@@ -85,6 +85,13 @@ public class PlayerPickupScript : MonoBehaviour
             heldItem = null;
             itemGrabbedEvent.Invoke(0f);
         }
+        else
+        {
+            //delete when bug is fixed
+            Destroy(heldItem);
+            heldItem = null;
+            itemGrabbedEvent.Invoke(0f);
+        }
 
 
     }

@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9934be3a600900a42af6faa78c5eea5c, type: 3}
   m_Name: MichaelSoftItem
   m_EditorClassIdentifier: 
-  pName: MichaelSoftItem
+  pName: MichaelSoft
   icon: {fileID: 21300000, guid: 41a22039f9988604f99b96011a2ac816, type: 3}
   iType: 4

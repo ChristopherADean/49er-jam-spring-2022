@@ -14,3 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pName: BootLego
   icon: {fileID: 21300000, guid: 4a7f8c907d661b3429e1187ce5abcc92, type: 3}
+  iType: 0
