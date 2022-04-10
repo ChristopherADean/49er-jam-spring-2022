@@ -83,6 +83,8 @@ public class PlayerPickupScript : MonoBehaviour
             heldItem = null;
             itemGrabbedEvent.Invoke(0f);
         }
+
+
     }
 
     public void RecieveNewTarget(float f)

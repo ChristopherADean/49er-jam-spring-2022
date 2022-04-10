@@ -13,4 +13,9 @@ MonoBehaviour:
   m_Name: DefaultAgentData
   m_EditorClassIdentifier: 
   aName: Default Agent
+  health: 3
   checkFrequency: 3
+  pickupRange: 2
+  shortStunTime: 3
+  longStunTime: 10
+  pathFindDistance: 50

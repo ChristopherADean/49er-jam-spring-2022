@@ -11,4 +11,6 @@ public class AgentData : ScriptableObject
     public float pickupRange = 2f;
     public float shortStunTime = 0.5f;
     public float longStunTime = 10f;
+    public float pathFindDistance = 50f;
+
 }
