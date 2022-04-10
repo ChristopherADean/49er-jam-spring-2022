@@ -95,5 +95,6 @@ public class MainGameManager : MonoBehaviour
         endGameEvent.Invoke(0f);
         Destroy(player);
         spectatorObj.SetActive(true);
+        updatePointsEvent.Invoke(score);
     }
 }

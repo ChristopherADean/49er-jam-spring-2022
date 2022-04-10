@@ -19,6 +19,7 @@ public class CartHitboxScript : MonoBehaviour
         if (Time.time < hitBoxCanHitTime)
             return;
 
+        
 
         hitBoxCanHitTime = Time.time + collideAbilityCooldown;
 
@@ -29,6 +30,7 @@ public class CartHitboxScript : MonoBehaviour
         dArgs.backwardsVelocity = forwardsVelocity;
         dArgs.attackDirection = transform.forward;
         dArgs.receivingObject = other.transform.root.gameObject;
+
 
         dEvent.Invoke(dArgs);
     }

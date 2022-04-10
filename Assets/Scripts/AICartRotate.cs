@@ -17,7 +17,8 @@ public class AICartRotate : MonoBehaviour
     {
         Vector3 r = rb.velocity.normalized;
         r.y = 0f;
-        transform.rotation = Quaternion.LookRotation(r);
+        if(r != Vector3.zero)
+            transform.rotation = Quaternion.LookRotation(r);
 
     }
 }

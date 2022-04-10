@@ -9,15 +9,20 @@ public class SpriteBillboardScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        mainCam = Camera.main.transform;
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-        Vector3 lookPos = mainCam.position;
-        lookPos.y = transform.position.y;
-        transform.LookAt(lookPos, Vector3.up);
-        transform.Rotate(0, 180, 0);
+        if(Camera.main.transform != null)
+        {
+            mainCam = Camera.main.transform;
+            Vector3 lookPos = mainCam.position;
+            lookPos.y = transform.position.y;
+            transform.LookAt(lookPos, Vector3.up);
+            transform.Rotate(0, 180, 0);
+        }
+        
     }
 }
