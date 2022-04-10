@@ -283,9 +283,153 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sounds:
-  - name: 
-    clip: {fileID: 0}
-    volume: 0
+  - name: bgm_main
+    clip: {fileID: 8300000, guid: f53c16fd01bacf44fa50b9fe87a36486, type: 3}
+    volume: 0.8
+    loop: 1
+    start: 0
+    source: {fileID: 0}
+  - name: bgm_level
+    clip: {fileID: 8300000, guid: bffde5002dd2f1440a33aa2b8c2b4ccc, type: 3}
+    volume: 0.8
+    loop: 1
+    start: 0
+    source: {fileID: 0}
+  - name: bgm_lose
+    clip: {fileID: 8300000, guid: 036874d70d805bd4ca553607e4680df3, type: 3}
+    volume: 1
+    loop: 0
+    start: 0
+    source: {fileID: 0}
+  - name: sfx_bell
+    clip: {fileID: 8300000, guid: 0ecb919ee946a5e4dbc1f1148e6a20c7, type: 3}
+    volume: 1
+    loop: 0
+    start: 0
+    source: {fileID: 0}
+  - name: sfx_grunt_f_0
+    clip: {fileID: 8300000, guid: d742a05906b4c764aacc02a28ecb7161, type: 3}
+    volume: 1
+    loop: 0
+    start: 0
+    source: {fileID: 0}
+  - name: sfx_grunt_f_1
+    clip: {fileID: 8300000, guid: 047a9638c7e96b44b97f12afe6dc4563, type: 3}
+    volume: 1
+    loop: 0
+    start: 0
+    source: {fileID: 0}
+  - name: sfx_grunt_m_0
+    clip: {fileID: 8300000, guid: 2e3e0d8c39499f94c9e0e4a4c40da675, type: 3}
+    volume: 1
+    loop: 0
+    start: 0
+    source: {fileID: 0}
+  - name: sfx_grunt_m_1
+    clip: {fileID: 8300000, guid: 706a5d8143670d543a3df1fa308a1408, type: 3}
+    volume: 1
+    loop: 0
+    start: 0
+    source: {fileID: 0}
+  - name: sfx_grunt_m_2
+    clip: {fileID: 8300000, guid: c29aebaca3c915d469e2d01be4213dfe, type: 3}
+    volume: 1
+    loop: 0
+    start: 0
+    source: {fileID: 0}
+  - name: sfx_grunt_m_3
+    clip: {fileID: 8300000, guid: 7f0d1486fe1b8f440aabc5134b3a4523, type: 3}
+    volume: 1
+    loop: 0
+    start: 0
+    source: {fileID: 0}
+  - name: sfx_grunt_m_4
+    clip: {fileID: 8300000, guid: 8f00f704d601ef745a3bd696c4465a12, type: 3}
+    volume: 1
+    loop: 0
+    start: 0
+    source: {fileID: 0}
+  - name: sfx_grunt_m_5
+    clip: {fileID: 8300000, guid: f41fb200625bf284e86e0aabca5b4801, type: 3}
+    volume: 1
+    loop: 0
+    start: 0
+    source: {fileID: 0}
+  - name: sfx_grunt_m_6
+    clip: {fileID: 8300000, guid: 2b0daf248487a38449a8abd2a1e42d10, type: 3}
+    volume: 1
+    loop: 0
+    start: 0
+    source: {fileID: 0}
+  - name: sfx_grunt_m_7
+    clip: {fileID: 8300000, guid: 3618e41ac4e1a984696f0138186bc9d6, type: 3}
+    volume: 1
+    loop: 0
+    start: 0
+    source: {fileID: 0}
+  - name: sfx_grunt_m_8
+    clip: {fileID: 8300000, guid: aaad0b1eac4593d4f9db8a06d1c78102, type: 3}
+    volume: 1
+    loop: 0
+    start: 0
+    source: {fileID: 0}
+  - name: sfx_grunt_m_9
+    clip: {fileID: 8300000, guid: 0b03ac75e8888e7439fac14dbbd361d3, type: 3}
+    volume: 1
+    loop: 0
+    start: 0
+    source: {fileID: 0}
+  - name: sfx_grunt_m_10
+    clip: {fileID: 8300000, guid: c6a051732bb81e5428f31bc8e405ba48, type: 3}
+    volume: 1
+    loop: 0
+    start: 0
+    source: {fileID: 0}
+  - name: sfx_grunt_m_11
+    clip: {fileID: 8300000, guid: fe4ad91c1e3ea0148b68c54c13b66136, type: 3}
+    volume: 1
+    loop: 0
+    start: 0
+    source: {fileID: 0}
+  - name: sfx_grunt_m_12
+    clip: {fileID: 8300000, guid: b55a0d74e4e89e849b4502625e913f86, type: 3}
+    volume: 1
+    loop: 0
+    start: 0
+    source: {fileID: 0}
+  - name: sfx_grunt_m_13
+    clip: {fileID: 8300000, guid: 4f470b845b38b254c8740290f52cca5d, type: 3}
+    volume: 1
+    loop: 0
+    start: 0
+    source: {fileID: 0}
+  - name: sfx_hit
+    clip: {fileID: 8300000, guid: a78300fbd0cba734d9276ee030c679b1, type: 3}
+    volume: 1
+    loop: 0
+    start: 0
+    source: {fileID: 0}
+  - name: sfx_pickup
+    clip: {fileID: 8300000, guid: 07410506278168e47b3f8a16b6e4fe63, type: 3}
+    volume: 1
+    loop: 0
+    start: 0
+    source: {fileID: 0}
+  - name: sfx_register
+    clip: {fileID: 8300000, guid: c4638c341d6493b40a4f9e28d86ddbda, type: 3}
+    volume: 1
+    loop: 0
+    start: 0
+    source: {fileID: 0}
+  - name: sfx_select
+    clip: {fileID: 8300000, guid: e3f27b957362bf147b43e7e5db30b26a, type: 3}
+    volume: 1
+    loop: 0
+    start: 0
+    source: {fileID: 0}
+  - name: sfx_swing
+    clip: {fileID: 8300000, guid: 7b42ac731f6ad274c8bcfbc5f42334f7, type: 3}
+    volume: 1
     loop: 0
     start: 0
     source: {fileID: 0}
