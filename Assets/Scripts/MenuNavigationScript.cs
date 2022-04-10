@@ -32,6 +32,7 @@ public class MenuNavigationScript : MonoBehaviour
             FindObjectOfType<AudioManagerScript>().Play("sfx_bell");
             yield return new WaitForSeconds(2);
             FindObjectOfType<AudioManagerScript>().Play("bgm_level");
+            FindObjectOfType<AudioManagerScript>().Play("sfx_crowd");
         }
         if (sceneToLoad == "MainMenu") {
             FindObjectOfType<AudioManagerScript>().Play("sfx_select");
