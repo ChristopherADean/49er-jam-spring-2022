@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028334, g: 0.2257134, b: 0.30692226, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -5552,7 +5552,7 @@ MonoBehaviour:
   - {fileID: 4137689505727939046, guid: f6bc82bba7a921b4b95d4ff97a03474f, type: 3}
   - {fileID: 5161121793608621765, guid: bd13ccba871e7794fb829913e43eb410, type: 3}
   - {fileID: 5161121793608621765, guid: bd13ccba871e7794fb829913e43eb410, type: 3}
-  gameTime: 120
+  gameTime: 194
   updateTimerEvent: {fileID: 11400000, guid: 968c5a3169b62d647b16b090674e1b23, type: 2}
   updatePointsEvent: {fileID: 11400000, guid: c309ae0fc02235742b009886cc2f2816, type: 2}
   endGameEvent: {fileID: 11400000, guid: daba57849c6a86c4aa408f128084345d, type: 2}
