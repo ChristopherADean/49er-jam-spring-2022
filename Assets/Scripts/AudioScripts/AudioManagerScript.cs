@@ -27,10 +27,6 @@ public class AudioManagerScript : MonoBehaviour
         }
     }
 
-    void Start() {
-        Play("bgm_level");
-    }
-
     public void Play(string name) {
         Sound s  = Array.Find(sounds, sounds => sounds.name == name);
         if (s == null) return;
