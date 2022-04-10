@@ -53,6 +53,7 @@ public class CartAttack : MonoBehaviour
 
     public void OnAttack()
     {
+        FindObjectOfType<AudioManagerScript>().Play("sfx_swing");
         if (Time.time > attackStart + cancelTime)
             attackStart = Time.time;
     }

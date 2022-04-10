@@ -28,9 +28,16 @@ public class MenuNavigationScript : MonoBehaviour
 
     IEnumerator NextScene() {
         FindObjectOfType<AudioManagerScript>().StopAll();
-        FindObjectOfType<AudioManagerScript>().Play("sfx_bell");
-        yield return new WaitForSeconds(3);
-        FindObjectOfType<AudioManagerScript>().Play("bgm_level");
+        if (sceneToLoad == "MainGame") {
+            FindObjectOfType<AudioManagerScript>().Play("sfx_bell");
+            yield return new WaitForSeconds(2);
+            FindObjectOfType<AudioManagerScript>().Play("bgm_level");
+        }
+        if (sceneToLoad == "MainMenu") {
+            FindObjectOfType<AudioManagerScript>().Play("sfx_select");
+            yield return new WaitForSeconds(1);
+            FindObjectOfType<AudioManagerScript>().Play("bgm_main");
+        }
         SceneManager.LoadScene(sceneToLoad);
     }
 }
