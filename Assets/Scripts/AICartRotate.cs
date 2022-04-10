@@ -15,8 +15,9 @@ public class AICartRotate : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
-        transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(rb.velocity.normalized), Time.deltaTime * 40f);
+        Vector3 r = rb.velocity.normalized;
+        r.y = 0f;
+        transform.rotation = Quaternion.LookRotation(r);
 
     }
 }

@@ -14,3 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pName: Soomsang
   icon: {fileID: 21300000, guid: 295600bda6b624847a5248719022789a, type: 3}
+  iType: 8

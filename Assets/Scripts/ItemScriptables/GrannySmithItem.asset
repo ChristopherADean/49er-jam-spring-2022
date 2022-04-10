@@ -14,3 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pName: GrannySmith
   icon: {fileID: 21300000, guid: 864823d5c24074a4daadd63725c0234c, type: 3}
+  iType: 2

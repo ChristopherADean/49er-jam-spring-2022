@@ -14,3 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pName: PTSD
   icon: {fileID: 21300000, guid: ef53402ee448bb942b66ed780b617e6f, type: 3}
+  iType: 7
