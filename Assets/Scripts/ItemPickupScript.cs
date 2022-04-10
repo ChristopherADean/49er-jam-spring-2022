@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ItemPickupScript : MonoBehaviour
 {
-    [SerializeField] private ItemScriptable associatedItem;
+    public ItemScriptable associatedItem;
     public bool grabbable = true;
     public bool claimed = false;
 

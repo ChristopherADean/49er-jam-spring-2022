@@ -14,3 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pName: PoochieBag
   icon: {fileID: 21300000, guid: 6dd2837b69a8a0c4a9825f1a24aeda7b, type: 3}
+  iType: 6

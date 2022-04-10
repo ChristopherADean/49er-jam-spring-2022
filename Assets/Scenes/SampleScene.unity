@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 2138677392}
-  m_IndirectSpecularColor: {r: 0.28502655, g: 0.37139302, b: 0.49600938, a: 1}
+  m_IndirectSpecularColor: {r: 0.2850269, g: 0.3713935, b: 0.49601045, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -123,37 +123,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 23800000, guid: ba3ff93ee443cc340883090bac205f12, type: 2}
---- !u!1 &20821147
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 20821148}
-  m_Layer: 6
-  m_Name: CartInventory
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &20821148
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 20821147}
-  m_LocalRotation: {x: -0.017189886, y: -0.68244815, z: 0.2856763, w: 0.6725758}
-  m_LocalPosition: {x: -0.059, y: 0.568, z: 0.552}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 911451271}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 21.518, y: -85.812, z: 25.995}
 --- !u!1 &130137970
 GameObject:
   m_ObjectHideFlags: 0
@@ -411,37 +380,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b1defca1a95ce24fa4a03d44a63ed1e, type: 3}
---- !u!1 &552705892
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 552705893}
-  m_Layer: 6
-  m_Name: ThrowSpawn
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &552705893
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 552705892}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.737, z: 0.098}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 911451271}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &766157125
 GameObject:
   m_ObjectHideFlags: 0
@@ -1522,11 +1460,6 @@ Mesh:
     offset: 0
     size: 0
     path: 
---- !u!4 &911451271 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 7630517990733558636, guid: 8d0ed6f6f5f2be549842fea78aed65d7, type: 3}
-  m_PrefabInstance: {fileID: 1575508661132383454}
-  m_PrefabAsset: {fileID: 0}
 --- !u!43 &1064561861
 Mesh:
   m_ObjectHideFlags: 0
@@ -4282,30 +4215,6 @@ MonoBehaviour:
   m_SelectedFaces: 
   m_SelectedEdges: []
   m_SelectedVertices: 
---- !u!1 &2104913501 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1575508661985262211, guid: 8d0ed6f6f5f2be549842fea78aed65d7, type: 3}
-  m_PrefabInstance: {fileID: 1575508661132383454}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &2104913508
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2104913501}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5e11423bd958c0d4eab4e0ff863a2b4d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cart: {fileID: 20821148}
-  cartSpawn: {fileID: 552705893}
-  interactLayermask:
-    serializedVersion: 2
-    m_Bits: 55
-  grabDistance: 2
-  throwSpeed: 5
 --- !u!4 &2119139947 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4173502887373555077, guid: 7255ec4a0be454e409f2b24f764e0364, type: 3}

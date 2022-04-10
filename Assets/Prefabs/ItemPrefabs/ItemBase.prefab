@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 8346428062815180630}
   - component: {fileID: 8346428062815180629}
   - component: {fileID: 8346428062815180628}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Box
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -108,7 +108,7 @@ GameObject:
   - component: {fileID: 8346428063356570929}
   - component: {fileID: 1588738166}
   - component: {fileID: 9188883959044782707}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: ItemBase
   m_TagString: Item
   m_Icon: {fileID: 0}
@@ -146,6 +146,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   associatedItem: {fileID: 0}
   grabbable: 1
+  claimed: 0
 --- !u!54 &9188883959044782707
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -172,7 +173,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8346428064303421471}
   - component: {fileID: 8346428064303421464}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Label
   m_TagString: Untagged
   m_Icon: {fileID: 0}

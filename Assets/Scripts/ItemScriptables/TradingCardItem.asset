@@ -14,3 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pName: TradingCard
   icon: {fileID: 21300000, guid: bd56701e9bf1e6d46b62439a4be2b678, type: 3}
+  iType: 10

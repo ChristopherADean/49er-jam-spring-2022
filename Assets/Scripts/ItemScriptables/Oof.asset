@@ -14,3 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pName: Oof Gun
   icon: {fileID: 21300000, guid: d5d4089f690ece24a8b257f7545b4030, type: 3}
+  iType: 5
