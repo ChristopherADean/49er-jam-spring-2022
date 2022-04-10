@@ -32,4 +32,16 @@ public class AudioManagerScript : MonoBehaviour
         if (s == null) return;
         s.source.PlayDelayed(s.start);
     }
+
+    public void Stop(string name) {
+        Sound s  = Array.Find(sounds, sounds => sounds.name == name);
+        if (s == null) return;
+        s.source.Stop();
+    }
+
+    public void StopAll() {
+        foreach (Sound s in sounds) {
+            s.source.Stop();
+        }
+    }
 }
