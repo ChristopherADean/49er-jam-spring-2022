@@ -18,6 +18,7 @@ public class PlayerPickupScript : MonoBehaviour
         //Throw item if we hit button and have an item already
         if (heldItem != null)
         {
+            FindObjectOfType<AudioManagerScript>().Play("sfx_drop");
             ThrowItem();
             return;
         }
@@ -32,6 +33,7 @@ public class PlayerPickupScript : MonoBehaviour
             if (hit.collider.transform.parent.gameObject.GetComponent<ItemPickupScript>().grabbable == false)
                 return;
 
+            FindObjectOfType<AudioManagerScript>().Play("sfx_pickup");
             heldItem = hit.collider.transform.parent.gameObject;
             heldItem.transform.SetParent(cart.transform);
             heldItem.GetComponent<ItemPickupScript>().grabbable = false;

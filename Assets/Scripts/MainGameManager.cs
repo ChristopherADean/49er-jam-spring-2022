@@ -78,6 +78,7 @@ public class MainGameManager : MonoBehaviour
     {
         score++;
         updatePointsEvent.Invoke(score);
+        FindObjectOfType<AudioManagerScript>().Play("sfx_register");
         AssignNewItem();
 
     }
@@ -91,6 +92,8 @@ public class MainGameManager : MonoBehaviour
 
     public void EndgameStuff()
     {
+        FindObjectOfType<AudioManagerScript>().StopAll();
+        FindObjectOfType<AudioManagerScript>().Play("bgm_lose");
         gameOver = true;
         endGameEvent.Invoke(0f);
         Destroy(player);
