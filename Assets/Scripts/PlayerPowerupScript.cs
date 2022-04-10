@@ -8,6 +8,7 @@ public class PlayerPowerupScript : MonoBehaviour
     private GameObject iconObj;
     [SerializeField] private GameObject iconPrefab;
     [SerializeField] private DamageEventScriptable dEvent;
+    [SerializeField] private GameEventScriptable speedMultEvent;
     private float powerupEndTime;
     private float lastAttackTime = -10f;
     
@@ -26,7 +27,7 @@ public class PlayerPowerupScript : MonoBehaviour
 
                 break;
             case (PowerupScript.PowerupTypes.SPEED):
-
+                speedMultEvent.Invoke(2f);
                 break;
         }
     }
@@ -64,7 +65,7 @@ public class PlayerPowerupScript : MonoBehaviour
 
                 break;
             case (PowerupScript.PowerupTypes.SPEED):
-
+                speedMultEvent.Invoke(0.5f);
                 break;
         }
     }
@@ -95,7 +96,7 @@ public class PlayerPowerupScript : MonoBehaviour
                 lastAttackTime = Time.time;
                     break;
             case (PowerupScript.PowerupTypes.SPEED):
-
+                
                 break;
         }
     }

@@ -296,9 +296,10 @@ GameObject:
   - component: {fileID: 277116280378271978}
   - component: {fileID: 8911572654175278873}
   - component: {fileID: 1143983089663190952}
+  - component: {fileID: 2253888650611528931}
   m_Layer: 6
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -588,6 +589,34 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tEvent: {fileID: 11400000, guid: 387cb726b91057a439768d408c5580c7, type: 2}
+--- !u!114 &2253888650611528931
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1575508661985262211}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20e44335a11a56649b73d3dc245908a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gEvent: {fileID: 11400000, guid: a9e3bb3e44ce87848869bef6d181b513, type: 2}
+  uEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1575508661985262209}
+        m_TargetAssemblyTypeName: PMovement, Assembly-CSharp
+        m_MethodName: SpeedMultEvent
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &4751360384618235657
 GameObject:
   m_ObjectHideFlags: 0
@@ -691,8 +720,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   collideAbilityCooldown: 0.1
   damage: 1
-  upwardsVelocity: 6
-  forwardsVelocity: 10
+  upwardsVelocity: 50
+  forwardsVelocity: 50
   dEvent: {fileID: 11400000, guid: 9a13b6c56e4672841a2b89a1e593a7c7, type: 2}
 --- !u!1001 &7183739485287379057
 PrefabInstance:

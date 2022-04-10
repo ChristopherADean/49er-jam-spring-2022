@@ -21,7 +21,7 @@ public class MainGameManager : MonoBehaviour
     private List<GameObject> enemySpawns = new List<GameObject>();
 
     //GameVars
-    private int score = 0;
+    public int score = 0;
     private GameObject player;
     private GameObject targetObject; //This is the object the player is assigned to get currently
     private bool gameOver = false;
@@ -95,6 +95,7 @@ public class MainGameManager : MonoBehaviour
         endGameEvent.Invoke(0f);
         Destroy(player);
         spectatorObj.SetActive(true);
-        updatePointsEvent.Invoke(score);
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
     }
 }
