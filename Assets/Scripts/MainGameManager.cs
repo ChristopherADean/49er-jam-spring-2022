@@ -60,7 +60,7 @@ public class MainGameManager : MonoBehaviour
     public void AssignNewItem()
     {
         GameObject[] items = GameObject.FindGameObjectsWithTag("Item");
-        int index = (int)Random.Range(0f, items.Length - 1);
+        int index = Random.Range(0, items.Length - 1);
         targetObject = items[index];
 
         updateTargetItem.Invoke(targetObject.GetComponent<ItemPickupScript>().associatedItem.pName);
