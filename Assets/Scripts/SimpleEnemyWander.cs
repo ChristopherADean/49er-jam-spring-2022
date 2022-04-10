@@ -62,8 +62,8 @@ public class SimpleEnemyWander : MonoBehaviour
         Debug.Log("Got hit " +args.receivingObject);
         if (!args.receivingObject.Equals(gameObject))
             return;
-
-        
+        FindObjectOfType<AudioManagerScript>().Play("sfx_hit");
+        FindObjectOfType<AudioManagerScript>().Play("sfx_grunt_m_" + Random.Range(0, 13));
         //Subtract from health
         health -= args.damage;
         stunned = true;
