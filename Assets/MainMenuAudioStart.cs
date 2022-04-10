@@ -1,15 +1,13 @@
-using UnityEngine.Audio;
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
-public class AudioManager : MonoBehaviour
+public class MainMenuAudioStart : MonoBehaviour
 {
-
-    public Sound[] sounds;
-
     // Start is called before the first frame update
     void Start()
     {
-        
+        FindObjectOfType<AudioManagerScript>().Play("bgm_main");
     }
 
     // Update is called once per frame

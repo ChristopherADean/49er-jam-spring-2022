@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 430827fe313837a4b858704a4d9d011c, type: 3}
+  m_Name: SpeedPowerup
+  m_EditorClassIdentifier: 
+  pName: Speed Powerup
+  pSprite: {fileID: 21300000, guid: 9bf01531fab6e2c46b2d9f192c42b977, type: 3}
+  pType: 1
+  duration: 10
+  damage: 1
+  attackCooldown: 0.1
+  knockbackUp: 3
+  knockbackBack: 5
+  speedMult: 1.8

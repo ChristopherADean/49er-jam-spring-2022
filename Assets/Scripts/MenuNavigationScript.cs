@@ -11,17 +11,26 @@ public class MenuNavigationScript : MonoBehaviour
 
     public void LoadNewMenu()
     {
+        FindObjectOfType<AudioManagerScript>().Play("sfx_select");
         targetPanel.SetActive(true);
         hostPanel.SetActive(false);
     }
 
     public void LoadNewScene()
     {
-        SceneManager.LoadScene(sceneToLoad);
+        StartCoroutine(NextScene());
     }
 
     public void CloseGame()
     {
         Application.Quit();
+    }
+
+    IEnumerator NextScene() {
+        FindObjectOfType<AudioManagerScript>().StopAll();
+        FindObjectOfType<AudioManagerScript>().Play("sfx_bell");
+        yield return new WaitForSeconds(3);
+        FindObjectOfType<AudioManagerScript>().Play("bgm_level");
+        SceneManager.LoadScene(sceneToLoad);
     }
 }

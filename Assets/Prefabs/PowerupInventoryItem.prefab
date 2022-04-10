@@ -47,6 +47,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   iconPrefab: {fileID: 3649468353027726885, guid: 0f6af8d28728e404ba6bc87d2255ddfe, type: 3}
   dEvent: {fileID: 11400000, guid: 9a13b6c56e4672841a2b89a1e593a7c7, type: 2}
+  speedMultEvent: {fileID: 11400000, guid: a9e3bb3e44ce87848869bef6d181b513, type: 2}
 --- !u!65 &3693310201787282641
 BoxCollider:
   m_ObjectHideFlags: 0
