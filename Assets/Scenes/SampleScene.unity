@@ -4289,6 +4289,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1416686641855184674, guid: 7731f867b651d4f469421b4a4f073e82, type: 3}
+      propertyPath: m_BoundingSphereOverride.w
+      value: 1.36e-43
+      objectReference: {fileID: 0}
+    - target: {fileID: 1416686641855184674, guid: 7731f867b651d4f469421b4a4f073e82, type: 3}
+      propertyPath: m_BoundingSphereOverride.y
+      value: -3.5282083e+13
+      objectReference: {fileID: 0}
+    - target: {fileID: 1416686641855184674, guid: 7731f867b651d4f469421b4a4f073e82, type: 3}
+      propertyPath: m_BoundingSphereOverride.z
+      value: 6.56e-43
+      objectReference: {fileID: 0}
     - target: {fileID: 1416686641855184675, guid: 7731f867b651d4f469421b4a4f073e82, type: 3}
       propertyPath: m_RootOrder
       value: 0

@@ -519,8 +519,7 @@ GameObject:
   - component: {fileID: 2013230044634077762}
   - component: {fileID: 2259208236109978738}
   - component: {fileID: 6548324242324705248}
-  - component: {fileID: 729476923724282337}
-  - component: {fileID: 7892088028953872761}
+  - component: {fileID: 2939279565823500273}
   m_Layer: 5
   m_Name: FinalScore
   m_TagString: Untagged
@@ -645,7 +644,7 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!114 &729476923724282337
+--- !u!114 &2939279565823500273
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -654,37 +653,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 2424183747469633923}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 60908cecc2d975048af639ed95666e03, type: 3}
+  m_Script: {fileID: 11500000, guid: ad722496eaace754d841d6f8d17c76f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &7892088028953872761
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2424183747469633923}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 20e44335a11a56649b73d3dc245908a0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gEvent: {fileID: 11400000, guid: c309ae0fc02235742b009886cc2f2816, type: 2}
-  uEvent:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 729476923724282337}
-        m_TargetAssemblyTypeName: ScoreScript, Assembly-CSharp
-        m_MethodName: UpdateScore
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+  gm: {fileID: 0}
 --- !u!1 &4030204391726635252
 GameObject:
   m_ObjectHideFlags: 0
@@ -831,8 +803,8 @@ GameObject:
   - component: {fileID: 7122876627854054761}
   - component: {fileID: 8243789877091500733}
   - component: {fileID: 1523178412140192354}
-  - component: {fileID: 3654377918046669824}
-  - component: {fileID: 7397275308976681003}
+  - component: {fileID: 8081242221418530657}
+  - component: {fileID: 900089589986294475}
   m_Layer: 5
   m_Name: ScoreText
   m_TagString: Untagged
@@ -959,7 +931,7 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!114 &3654377918046669824
+--- !u!114 &8081242221418530657
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -971,7 +943,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60908cecc2d975048af639ed95666e03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &7397275308976681003
+--- !u!114 &900089589986294475
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -987,7 +959,7 @@ MonoBehaviour:
   uEvent:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 3654377918046669824}
+      - m_Target: {fileID: 8081242221418530657}
         m_TargetAssemblyTypeName: ScoreScript, Assembly-CSharp
         m_MethodName: UpdateScore
         m_Mode: 0

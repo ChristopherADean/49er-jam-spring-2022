@@ -51,6 +51,8 @@ public class PMovement : MonoBehaviour
     private float unCrouchingEndTime = 0.0f;
     private bool crouching = false;
 
+    private float speedMult = 1f;
+
 
     // Start is called before the first frame update
     void Start()
@@ -148,7 +150,7 @@ public class PMovement : MonoBehaviour
             curAccel = airMoveSpeed;
 
         //Set maxSpeed
-        float mSpeed = maxMoveSpeed;
+        float mSpeed = maxMoveSpeed * speedMult;
         if (grounded && sprinting && sprintingEnabled)
             mSpeed = maxSprintSpeed;
 
@@ -283,5 +285,10 @@ public class PMovement : MonoBehaviour
             sprinting = true;
         else
             sprinting = false;
+    }
+
+    public void SpeedMultEvent(float f)
+    {
+        speedMult = speedMult * f;
     }
 }
